@@ -4,7 +4,7 @@ from django.http import JsonResponse
 async def async_view(request):
     async def count():
         for i in range(1, 11):
-            await asyncio.sleep(1)  
+            await asyncio.sleep(1)  #Aguarda 1 segundo para chamar o proximo numero
             print(i) 
         return 'Contagem concluída'
 
